@@ -1,3 +1,5 @@
+name: Publish Image
+
 on:
   push:
     branches:
@@ -16,7 +18,7 @@ jobs:
         uses: docker/login-action@v2
         with:
           username: matana1305
-          token: dckr_pat_9kUgkgBgNpvfBa-be_X6Sx6dDOs
+          password: 123456789
       - name: Build image
         uses: docker/build-push-action@v2
         with:
